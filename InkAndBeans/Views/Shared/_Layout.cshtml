@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+
+<body>
+    <header>
+         <nav>
+
+    <div class="logo">Ink & Bean</div>
+
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/Books">Books</a></li>
+      <li><a href="/Menu">Menu</a></li>
+      <li><a href="/Events">Events</a></li>
+      <li><a href="/Contact">Contact</a></li>
+    </ul>
+
+  </nav>
+
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+  <footer>
+
+    <div class="footer-content">
+
+      <div>
+        <h3>Ink & Bean</h3>
+
+        <p>
+          Aesthetic coffee & book café designed
+          for dreamers, readers, and creators.
+        </p>
+      </div>
+
+      <div>
+        <h3>Opening Hours</h3>
+
+        <p>
+          Mon - Fri : 9AM - 10PM <br>
+          Saturday : 10AM - 11PM <br>
+          Sunday : Closed
+        </p>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

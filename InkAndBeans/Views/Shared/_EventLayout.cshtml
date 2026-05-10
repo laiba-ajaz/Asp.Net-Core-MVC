@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+
+    <link rel="stylesheet" href="~/css/eventlayout.css" />
+</head>
+
+<body>
+
+    <!-- SIMPLE MAGAZINE HEADER -->
+    <header class="mag-header">
+
+        <div class="logo">Ink & Bean <span>Events</span></div>
+
+        <nav class="mag-nav">
+            <a href="/">Home</a>
+            <a href="/Books">Books</a>
+            <a href="/Menu">Menu</a>
+            <a href="/Events">Events</a>
+            <a href="/Contact">Contact</a>
+        </nav>
+
+    </header>
+
+    <!-- PAGE CONTENT -->
+    <main>
+        @RenderBody()
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="mag-footer">
+        <p>© 2026 Ink & Bean Events</p>
+        <p>Stories • Coffee • Community</p>
+    </footer>
+
+</body>
+</html>
