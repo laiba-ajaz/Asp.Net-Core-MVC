@@ -1,0 +1,121 @@
+@{
+    ViewData["Title"] = "Student Enrollment Form";
+}
+
+<style>
+    body {
+        background: linear-gradient(135deg, #e3f2fd, #90caf9);
+    }
+
+    .form-card {
+        border-radius: 18px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        border: none;
+    }
+
+    .form-title {
+        font-weight: 700;
+        color: #1e88e5;
+    }
+
+    .btn-submit {
+        background: linear-gradient(45deg, #1e88e5, #5e35b1);
+        border: none;
+        padding: 10px 30px;
+        border-radius: 8px;
+        color: white;
+        font-weight: 600;
+    }
+
+    .form-label {
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    input, select {
+        border-radius: 8px !important;
+    }
+</style>
+
+<div class="container py-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-8">
+
+            <div class="card form-card p-4">
+
+                <div class="text-center mb-4">
+                    <h3 class="form-title">Student Enrollment Form</h3>
+                </div>
+
+                <form method="post">
+
+                    <div class="row g-3">
+
+                        <div class="col-md-6">
+                            <label class="form-label">First Name *</label>
+                            <input type="text" name="FirstName" class="form-control form-control-sm" required />
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Last Name *</label>
+                            <input type="text" name="LastName" class="form-control form-control-sm" required />
+                        </div>
+
+                        <div class="col-md-4">
+                            <label class="form-label">Date of Birth *</label>
+                            <input type="date" name="DOB" class="form-control form-control-sm" required />
+                        </div>
+
+                        <div class="col-md-4">
+                            <label class="form-label">Age *</label>
+                            <input type="number" name="Age" class="form-control form-control-sm" required />
+                        </div>
+
+                        <div class="col-md-4">
+                            <label class="form-label">Gender *</label>
+                            <select name="Gender" class="form-control form-control-sm">
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Course *</label>
+                            <select name="Course" class="form-control form-control-sm">
+                                <option>CPISM</option>
+                                <option>DISM</option>
+                                <option>HDSE</option>
+                                <option>ADSE</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Email *</label>
+                            <input type="email" name="Email" class="form-control form-control-sm" required />
+                        </div>
+
+                        <div class="col-md-12">
+                            <label class="form-label">Contact *</label>
+                            <input type="text" name="Contact" class="form-control form-control-sm" required />
+                        </div>
+
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn-submit">
+                            Submit Enrollment
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
